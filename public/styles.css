@@ -1,0 +1,407 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+ 
+    body {
+        font-family: Arial, sans-serif;
+      }
+      
+      .container {
+        width: 60%;
+        margin: 0 auto;
+      }
+      
+      #comments-list {
+        margin-bottom: 20px;
+      }
+      
+      .comment-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+      }
+      
+      .comment-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      
+      .comment-content {
+        flex-grow: 1;
+      }
+      
+      .comment-content blockquote {
+        margin: 0;
+        font-style: italic;
+        quotes: "“" "”" "‘" "’";
+      }
+      
+      .comment-content blockquote:before {
+        content: open-quote;
+      }
+      
+      .comment-content blockquote:after {
+        content: close-quote;
+      }
+      
+      .comment-name {
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      
+      .comment-item:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      
+      .comment-item:nth-child(even) img {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+      
+      .comment-item:nth-child(even) .comment-content {
+        text-align: right;
+      }
+         
+
+
+       /* Pour la page sans les commmentaires */
+       *
+{
+    margin: 0px;
+    padding: 0px;
+}
+.lendor {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+html body
+{
+    background-color: lightgrey;
+}
+h1 h2 h3
+{
+    margin-bottom: 0px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.header
+{
+    background: rgb(36, 35, 35);
+    overflow: auto;
+    font-weight: 1.7em;
+}
+
+.header nav h1
+{
+    float: left;
+    padding: 20px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.header nav ul 
+{
+    float: right;
+    list-style: none;
+}
+
+.header nav ul li
+{
+    float: left;
+}
+
+.header nav ul li a
+{
+    padding: 20px;
+    display: block;
+}
+
+.header nav ul li a:hover
+{
+    padding: 20px;
+    background: #333;
+}
+body {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.Image1{
+    background: url(./Images/tour.jpg) center center / cover;
+    height: 500px;
+    text-align: center;
+}
+.Image1-content
+{
+    margin: auto;
+    max-width: 600px;
+    padding-top: 140px;
+    color: white;
+    display: block;
+}
+
+.Image1-content h1
+{
+    font-size: 35px;
+}
+
+.Image1-content p
+{
+    font-size: 12px;
+}
+
+.couleur{
+    color:yellow ;
+}
+ 
+.disponible{
+    width: 1000px;
+    overflow: auto;
+    margin-left: 230px;
+    align-items: center;
+}
+.acquisitions{
+    margin-top: 20px;
+    font-size: 30px;
+}
+h2{
+    padding-top: 10px;
+}
+.iven{
+    background-color: white;
+    float:left;
+    width: 250px;
+    text-align: center;
+    margin: 15px;
+}
+.iven p{
+    margin-top: -2px;
+    margin-bottom: 3px;
+    align-items: center;
+}
+.iven img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.trait
+{
+    width: 20%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 95px;
+    margin-top: 10px ;
+    margin-bottom: -10px;
+    
+}
+   
+.Partie3-container {
+    display: flex;  
+    background-color: #333;
+    margin: 10px;
+      
+   
+   }
+
+.pop {
+   text-align: justify;
+    padding:100px 0px ;
+    margin: 15px;
+    color: white;
+} 
+
+.Partie4 {
+     
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    
+}
+
+.comment{
+    width: 100%;
+    display: block;
+    height: 600px;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: -5%;
+
+}
+ .comment1{
+    width: 70%;
+    display: block;
+    align-items: center;
+    float: left;
+    padding: 20px 0px;
+    background-color: white ;
+    margin-left: 15%;
+} 
+
+.comment1 img
+{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float : right;
+    margin-right: 80px;
+    margin-bottom: 17px;
+    border-radius: 50px; 
+}
+.comment3{
+    width: 70%;
+    display: block;
+    align-items: center;
+    float: left;
+    padding: 20px 0px;
+    background: white;
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.comment1 h5{
+    display: block;
+    float: right;
+    margin-top: 70px;
+    margin-right: -110px;
+    text-align: right;
+}
+.comment1 h6{
+    color: darkgray;
+    font-size: 13px;
+    display: block;
+    float: right;
+    margin-top: 90px;
+    margin-right: -35px;
+    text-align: right;
+}
+.comment3 img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 13px;
+    border-radius: 50px;
+}
+
+.comment3 h5{
+    font-display: block;
+    float:left;
+    margin-top: 73px;
+    margin-left: -93px;
+    text-align: left;
+}
+.comment3 h6{
+    color: darkgray;
+    font-size: 13px;
+    margin-top: 10%;
+    margin-left: -90px;
+    text-align: left;
+    float: left;
+    display: block;
+    
+}
+
+.comment4 p{
+    font-size: 12px;
+    padding: 2px 0;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+.comment2 p{
+    font-size: 12px;
+    padding: 2px 0px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.Trait1{
+    width: 70%;
+    margin-left: 15%;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.avant{
+    margin-left: 200px ;
+}
+
+.footer{
+    background: #333;
+    text-align: center;
+    padding: 43px;
+    color: white;
+}
