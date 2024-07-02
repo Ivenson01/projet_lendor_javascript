@@ -1,39 +1,35 @@
-
-document.getElementById('comment-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Empêche l'envoi du formulaire par défaut
-
-    // Récupérer les données du formulaire
-    const formData = new FormData(this);
-    const data = {};
-    formData.forEach((value, key) => {
-        data[key] = value;
-    });
-
-    // Envoyer les données au serveur
-    fetch('/contact', {
-        method: 'POST',
-        headers: {
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contact-form');
+  
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+      const formData = {
+        nom: document.getElementById('nom').value.trim(),
+        prenom: document.getElementById('prenom').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        message: document.getElementById('message').value.trim()
+      };
+  
+      try {
+        const response = await fetch('/contact', {
+          method: 'POST',
+          headers: {
             'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => {
-        return response.json().then(result => ({
-            ok: response.ok,
-            message: result.message
-        }));
-    })
-    .then(({ ok, message }) => {
-        // Afficher une alerte en fonction du résultat
-        alert(message);
-
-        if (ok) {
-            document.getElementById('comment-form').reset();
+          },
+          body: JSON.stringify(formData)
+        });
+  
+        const result = await response.json();
+        alert(result.message);
+  
+        if (response.ok) {
+          contactForm.reset();
         }
-    })
-    .catch(error => {
-        console.error('Erreur:', error);
-        alert('Une erreur s\'est produite. Veuillez réessayer.');
+      } catch (error) {
+        console.error('Erreur lors de l\'envoi du message:', error);
+        alert('Une erreur est survenue lors de l\'envoi de votre message.');
+      }
     });
 });
-
+  
